@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Limpiezas de comunidades, oficinas, mercados, concesionarios">
+    <script src="externo/bootstrap/js/jquery.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <title>Abraxas - Presupuesto</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./2242FlaviAbraxas1.ico">
+    <link rel="stylesheet" href="externo/aos.css">
+    <link rel="stylesheet" href="fuentes/fuentes.css">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap">
+    <link rel="stylesheet" href="img/iconos/css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="externo/bootstrap/css/bootstrap.min.css"> <!--libreria donde se configura el nav-->
+    <style>
+        body{
+            background-color: rgba(141,73, 37,0.5);
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="crash_navbar navbar navbar-expand-lg navbar-light bg-hover fixed-top">
+            <a href="index.html" class="navbar-brand">ABRAXAS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Inicio <span class="sr-only">(current)</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="QuienesSomos.html" class="nav-link"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropdown-item">Limpieza</a>
+                            <a href="#" class="dropdown-item">Mantenimiento</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Solicita Presupuesto</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Presupuesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeria</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Empleo</a>  
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled - Area Privada</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+       <div class="ewk_cont_banner">
+           <div class="crash_sombra">
+               <h1>ABRAXAS</h1>
+               <div class="container">
+                <form action ="enviar.php" method ="POST" enctype="multipart/form-data flex-md-row">
+                    <!--1ra Fila-->
+                    <div class="form-row">
+                        <div class="form-group col-md-6 col-6">
+                            <label for="nomCliente" class="control-label">Nombre </label>
+                            <input name="nomCliente" type="text" class="form-control" id="nomCliente" required>
+                        </div>
+                        <div class="form-group col-md-6 col-6">
+                            <label for="ApCliente" class="control-label">Apellidos</label>
+                            <input name="ApCliente" type="text" class="form-control" id="ApCliente" required>
+                        </div>
+                       
+                    </div>
+                    <!--2da Fila-->
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Correo" class="control-label">Correo Electronico</label>
+                            <input name="Correo" type="text" class="form-control" id="Correo" required>
+                        </div>
+                        <div class="form-group col-md-6 col-6">
+                            <label for="telefonoCliente" class="control-label">Telefono</label>
+                            <input name="telefonoCliente" type="text" class="form-control" id="telefonoCliente">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="observacion" class="form-label">Consulta</label>
+                        <textarea name="observacion" id="observacion" cols="30" rows="3" class="form-control" required></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-primary" name="envioConsulta value="Enviar">
+                    
+                </form>
+                
+                </div> 
+           </div>
+       </div>    
+    </section>
+</body>
+</html>

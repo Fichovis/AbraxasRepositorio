@@ -1,0 +1,7 @@
+@font-face{
+	font-family:Horizon;
+	src: url(Fuentes/Horizon.otf)
+}
+.ewk_cont_banner  div , .ewk_cont_banner h1{
+	font-family: Horizon.otf;
+}

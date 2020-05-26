@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(141,73,37,0.5);
+    font-family: 'Bungee Inline', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.crash_navbar{
+      background-color: rgba(153,102,102,0.7) !important;  
+}
+ 
+.crash_navbar div, .crash_navbar ul{
+    background-color: transparent !important;
+}
+
+.crash_con_sec_1{
+	padding: 10%;
+}
+
+.crash_con_sec_1 hr{
+	border-top: 1px solid rgba(1,1,1,0.3);
+}
+
+.crash_con_sec_1_link{
+	padding: 5%;
+}
+
+.crash_con_sec_1_link a{
+	width: 200px;
+}
+
+.crash_cont_footer{
+    background-color: rgba(1,1,1,0.7);
+    padding: 10%;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.crash_cont_footer a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.crash_cont_img_footer{
+    padding: 5%;
+}
+
+/*Codigo donde se cambia el titulo de Ábraxas a la fuente especial*/
+@font-face{
+	font-family: 'Horizon.otf';
+	src: url(../fuentes/Horizon.otf)
+}
+h1 {
+	font-family: 'Horizon.otf';
+}
+/*Fin del codigo especial*/
